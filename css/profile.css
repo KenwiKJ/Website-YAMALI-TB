@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*bgheader*/
+header{
+    height: auto;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar{
+    position: static;  /*Perlu diubah*/
+    width: 100%;
+    margin: auto;
+    padding: 35px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background-color: orange;
+}
+
+nav.black{
+    background: black;
+    padding: 25px 60px;
+    transition: 0.3s;
+} 
+
+.navbar ul li{
+    font-size: 16px;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 50px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.container-logo img{
+    width: 100%;
+    height: 170px;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    transition: all 0.3s ease;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    color: orange;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Profile*/
+.container{
+    width: 100%;
+    height: auto;
+    padding: 70px 120px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.title{
+    width: 40%;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px auto 50px auto;
+    text-align: center;
+}
+
+.container p{
+    color: white;
+    border-radius: 10px;
+    background-color: orange;
+    padding: 30px 20px;
+    line-height: 25px;
+    margin: 20px 0px;
+}
+
+
+
+/*Bagian Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:orange;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+
+footer .container-footer .sec.aboutus{
+    width: 40%;
+}
+
+footer .container-footer h2{
+    position: relative;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed li{
+    list-style: none;
+}
+
+.sosmed li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed li a:hover{
+    background: orange;
+    border: 2px solid white;
+}
+
+.sosmed li a .fa-brands{
+    color: #222;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}   
+
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: white;
+}
+
+.contact .info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    background: orange;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

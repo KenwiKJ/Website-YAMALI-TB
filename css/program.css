@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*bgheader*/
+header{
+    height: auto;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar{
+    position: static;  /*Perlu diubah*/
+    width: 100%;
+    margin: auto;
+    padding: 35px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background-color: orange;
+}
+
+nav.black{
+    background: black;
+    padding: 25px 60px;
+    transition: 0.3s;
+} 
+
+.navbar ul li{
+    font-size: 16px;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 50px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.container-logo img{
+    width: 100%;
+    height: 170px;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    transition: all 0.3s ease;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    color: orange;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Top*/
+.container-top{
+    width: 100%;
+    height: 550px;
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+    background-image: url(../img/43911.jpg);
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.container-top h2{
+    font-size: 40px;
+}
+
+.container-top p{
+    line-height: 25px;
+    padding: 20px 450px 0px 450px;
+    font-size: 20px;
+}
+
+/*Program*/
+.container-program{
+    color: white;
+    width: 100%;
+    height: 250px;
+    padding: 50px 120px; 
+    background-color: #222;
+}
+
+.text-program h2{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.text-program p{
+    padding: 15px 0px 42px 0px;
+    line-height: 23px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+/*Album*/
+.container-album{
+    width: 100%;
+    height: 1250px;
+    padding: 70px 80px;
+    font-family: 'Inter Tight', sans-serif;
+    background-color: orange;
+}
+
+.title{
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 0px 250px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+.box-album{
+    background-color: orange;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.box{
+    margin: 15px;
+    height: 300px;
+    border-radius: 40px;
+    flex-grow: 1;
+    background-color: white;
+    border: 1px solid orange;
+    padding: 40px;
+    color: white;
+}
+
+.double {
+    flex-basis: 35%;
+}
+
+/*Gabung*/
+.container-gabung{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    padding: 70px 120px;
+}
+
+.text-gabung h2{
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0px 40px 80px 30px;
+    font-size: 40px;
+}
+
+.img-gabung img{
+    width: 470px;
+    height: 265px;
+}
+
+.button{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 26px;
+    margin-left: 40px;
+    border-radius: 15px;
+    transition: .4s;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:hover{
+    color: orange;
+    background-color: transparent;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+
+
+/*Bagian Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:orange;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+
+footer .container-footer .sec.aboutus{
+    width: 40%;
+}
+
+footer .container-footer h2{
+    position: relative;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed li{
+    list-style: none;
+}
+
+.sosmed li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed li a:hover{
+    background: orange;
+    border: 2px solid white;
+}
+
+.sosmed li a .fa-brands{
+    color: #222;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}   
+
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: white;
+}
+
+.contact .info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    background: orange;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
